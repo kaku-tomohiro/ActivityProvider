@@ -18,6 +18,12 @@
         </activity>
         <activity android:name=".PublicActivity"
                   android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="provider" />
+            </intent-filter>
         </activity>
     </application>
 
